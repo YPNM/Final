@@ -104,18 +104,18 @@
                 'numSegments'     : 11,         // Specify number of segments.
                 'segments'        :             // Define segments including colour and text.
                 [                               // font size and test colour overridden on backrupt segments.
-       {'fillStyle' : '#BBFCFF', 'text' : 'x0.25'},
-       {'fillStyle' : '#A249A3', 'text' : 'x0.5'},
-       {'fillStyle' : '#94FF85', 'text' : 'x1'},
-       {'fillStyle' : '#ee1c24', 'text' : 'x3'},
-       {'fillStyle' : '#FFC90E', 'text' : 'x4'},
-       {'fillStyle' : '#ee1c24', 'text' : 'x3'},
-       {'fillStyle' : '#000000', 'text' : 'LOOSE', 'textFontSize' : 16, 'textFillStyle' : '#ffffff'},
-       {'fillStyle' : '#000000', 'text' : 'LOOSE', 'textFontSize' : 16, 'textFillStyle' : '#ffffff'},
-       {'fillStyle' : '#f6989d', 'text' : 'x2'},
-       {'fillStyle' : '#000000', 'text' : 'LOOSE', 'textFontSize' : 16, 'textFillStyle' : '#ffffff'},
-       {'fillStyle' : '#000000', 'text' : 'LOOSE', 'textFontSize' : 16, 'textFillStyle' : '#ffffff'}
-    ],
+                   {'fillStyle' : '#BBFCFF', 'text' : 'x0.25'},
+                   {'fillStyle' : '#A249A3', 'text' : 'x0.5'},
+                   {'fillStyle' : '#94FF85', 'text' : 'x1'},
+                   {'fillStyle' : '#ee1c24', 'text' : 'x3'},
+                   {'fillStyle' : '#FFC90E', 'text' : 'x4'},
+                   {'fillStyle' : '#ee1c24', 'text' : 'x3'},
+                   {'fillStyle' : '#000000', 'text' : 'LOOSE', 'textFontSize' : 16, 'textFillStyle' : '#ffffff'},
+                   {'fillStyle' : '#000000', 'text' : 'LOOSE', 'textFontSize' : 16, 'textFillStyle' : '#ffffff'},
+                   {'fillStyle' : '#f6989d', 'text' : 'x2'},
+                   {'fillStyle' : '#000000', 'text' : 'LOOSE', 'textFontSize' : 16, 'textFillStyle' : '#ffffff'},
+                   {'fillStyle' : '#000000', 'text' : 'LOOSE', 'textFontSize' : 16, 'textFillStyle' : '#ffffff'}
+                ],
                 'animation' :           // Specify the animation to use.
                 {
                     'type'     : 'spinToStop',
@@ -238,9 +238,7 @@
             {
                 // Just alert to the user what happened.
                 // In a real project probably want to do something more interesting than this with the result.
-                if (indicatedSegment.text == 'LOOSE TURN') {
-                    alert('Sorry but you loose a turn.');
-                } else if (indicatedSegment.text == 'LOOSE') {
+                if (indicatedSegment.text == 'LOOSE') {
                     alert('Oh no, you have gone BANKRUPT!');
                 } else {
                     alert("You have won " + indicatedSegment.text);
