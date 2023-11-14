@@ -74,16 +74,6 @@ async function placeBet() {
   }
 }
 
-async function withdrawFunds() {
-  const withdrawAmount = document.getElementById('withdrawAmount').value;
-  try {
-      const accounts = await web3.eth.getAccounts();
-      await contract.methods.withdrawFunds(withdrawAmount).send({ from: accounts[0] });
-  } catch (error) {
-      console.error("Error withdrawing funds:", error);
-  }
-}
-
 async function updateBalance() {
   try {
     // Проверяем, что контракт успешно загружен
