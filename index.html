@@ -180,7 +180,7 @@
                     wheelPower = powerLevel;
 
                     // Light up the spin button by changing it's source image and adding a clickable class to it.
-                    document.getElementById('spin_button').src = "wheel_of_ fortune/spin_on.png";
+                    document.getElementById('spin_button').src = "wheel_of_fortune/spin_on.png";
                     document.getElementById('spin_button').className = "clickable";
                 }
             }
@@ -203,7 +203,7 @@
                     }
 
                     // Disable the spin button so can't click again while wheel is spinning.
-                    document.getElementById('spin_button').src       = "spin_off.png";
+                    document.getElementById('spin_button').src       = "wheel_of_fortune/spin_off.png";
                     document.getElementById('spin_button').className = "";
 
                     // Begin the spin animation by calling startAnimation on the wheel object.
@@ -278,7 +278,7 @@
                     console.error("Segment with value " + segmentValue + " not found.");
                 }
                 // Disable the spin button so can't click again while wheel is spinning.
-                document.getElementById('spin_button').src       = "spin_off.png";
+                document.getElementById('spin_button').src       = "wheel_of_fortune/spin_off.png";
                 document.getElementById('spin_button').className = "";
                 wheelSpinning = true;
             }
