@@ -16,7 +16,7 @@ window.onload = async () => {
     return;
   }
 
-  const abi = await fetch('js/contractABI.json').then(response => response.json());
+  const abi = await fetch('/wheel_of_fortune/js/contractABI.json').then(response => response.json());
 
   try {
     contract = new web3.eth.Contract(abi, '0x5435B6233964B47D9532b715d12f6694D89D189D');
